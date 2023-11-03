@@ -9,7 +9,7 @@
 .game {
     display: flex;
     flex-direction: column;
-    height: 100rem;
+    height: 60rem;
     width: 100rem;
     justify-content: center;
     align-items: center;
@@ -53,9 +53,18 @@
 }
 
 .move {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
     font-size: 2rem;
     font-weight: bold;
     font-family: monospace;
+    top: 370px;
+}
+
+.movesLeft {
+    position: absolute;
+    top: 300px;
 }
 
 .restart {
