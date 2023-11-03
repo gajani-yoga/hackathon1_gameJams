@@ -1,0 +1,77 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    background: #082c6c; 
+    color: #fff; 
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+    width: 100rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    font-size: 3rem;
+    font-family: monospace;
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    position: absolute;
+    width: 30rem;
+    justify-content: space-evenly;
+    top: 70px;
+    z-index: 1;
+}
+
+.playerCount, .computerCount {
+    font-family: monospace;
+}
+
+.p-count, .c-count {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.rock, .paper, .scissors {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    width: 100px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    color: blue;    
+}
+
+.move {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.restart {
+    background-color: greenyellow;
+    color: green;
+    border-color: greenyellow;
+    cursor: pointer;
+    padding: 1rem;
+    display: none;
+    outline-offset: 0cqw;
+    border-radius: 10px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family: monospace;
+}
+
