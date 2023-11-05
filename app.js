@@ -9,7 +9,7 @@ const start = () => {
     const connection = () => {
         const rockButton = document.querySelector('.rock');
         const paperButton = document.querySelector('.paper');
-        const scissorButton = document.querySelector('.scissor');
+        const scissorButton = document.querySelector('.scissors');
 
         const playerChoice = [rockButton, paperButton, scissorButton];
         const computerChoice = ['rock', 'paper', 'scissors'];
@@ -42,7 +42,7 @@ const start = () => {
 const winner = (player, computer) => {
     const result = document.querySelector('.result');
     const playerScoreCard = document.querySelector('.p-count');
-    const computerScoreCard = document.querySelector('c-count');
+    const computerScoreCard = document.querySelector('.c-count');
 
     // To avoid any case sensitive errors
     player = player.toLowerCase();
@@ -90,7 +90,7 @@ const gameOver = (playerChoice, movesLeft) => {
     const restartButton = document.querySelector('.restart');
 
     playerChoice.forEach(option => {
-        option.style.display = 'none'
+        option.style.display = 'none';
     })
 
     chooseText.innerText = 'Game is now over! Hope you enjoyed!';
